@@ -13,6 +13,13 @@
 		7701BEBB233F1B1C0004C30D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7701BEB9233F1B1C0004C30D /* LaunchScreen.storyboard */; };
 		7701BEC6233F1B1C0004C30D /* Fakestagram_Xcode10Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7701BEC5233F1B1C0004C30D /* Fakestagram_Xcode10Tests.swift */; };
 		7701BED1233F1B540004C30D /* PostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7701BED0233F1B540004C30D /* PostsTableViewController.swift */; };
+		D49FB6D023523B250056B562 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49FB6CE23523B250056B562 /* PostViewController.swift */; };
+		D49FB6D123523B250056B562 /* PostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D49FB6CF23523B250056B562 /* PostViewController.xib */; };
+		D49FB6D3235244E00056B562 /* AuthorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49FB6D2235244E00056B562 /* AuthorView.swift */; };
+		D49FB6D52352450C0056B562 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49FB6D42352450C0056B562 /* Author.swift */; };
+		D49FB6D8235245200056B562 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49FB6D7235245200056B562 /* Comment.swift */; };
+		D49FB6DA235245280056B562 /* Like.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49FB6D9235245280056B562 /* Like.swift */; };
+		D49FB6DC235245890056B562 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49FB6DB235245890056B562 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,13 @@
 		7701BEC5233F1B1C0004C30D /* Fakestagram_Xcode10Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fakestagram_Xcode10Tests.swift; sourceTree = "<group>"; };
 		7701BEC7233F1B1C0004C30D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7701BED0233F1B540004C30D /* PostsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTableViewController.swift; sourceTree = "<group>"; };
+		D49FB6CE23523B250056B562 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		D49FB6CF23523B250056B562 /* PostViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostViewController.xib; sourceTree = "<group>"; };
+		D49FB6D2235244E00056B562 /* AuthorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorView.swift; sourceTree = "<group>"; };
+		D49FB6D42352450C0056B562 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		D49FB6D7235245200056B562 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		D49FB6D9235245280056B562 /* Like.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Like.swift; sourceTree = "<group>"; };
+		D49FB6DB235245890056B562 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Post.swift; path = ../../../fakestagram/Models/Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +91,8 @@
 		7701BEAF233F1B1B0004C30D /* Fakestagram-Xcode10 */ = {
 			isa = PBXGroup;
 			children = (
+				D49FB6D6235245110056B562 /* Models */,
+				D49FB6CD23523B100056B562 /* Views */,
 				7701BEB0233F1B1B0004C30D /* AppDelegate.swift */,
 				7701BED0233F1B540004C30D /* PostsTableViewController.swift */,
 				7701BEB4233F1B1B0004C30D /* Main.storyboard */,
@@ -94,6 +110,27 @@
 				7701BEC7233F1B1C0004C30D /* Info.plist */,
 			);
 			path = "Fakestagram-Xcode10Tests";
+			sourceTree = "<group>";
+		};
+		D49FB6CD23523B100056B562 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D49FB6CE23523B250056B562 /* PostViewController.swift */,
+				D49FB6CF23523B250056B562 /* PostViewController.xib */,
+				D49FB6D2235244E00056B562 /* AuthorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D49FB6D6235245110056B562 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D49FB6D42352450C0056B562 /* Author.swift */,
+				D49FB6DB235245890056B562 /* Post.swift */,
+				D49FB6D7235245200056B562 /* Comment.swift */,
+				D49FB6D9235245280056B562 /* Like.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +214,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D49FB6D123523B250056B562 /* PostViewController.xib in Resources */,
 				7701BEBB233F1B1C0004C30D /* LaunchScreen.storyboard in Resources */,
 				7701BEB8233F1B1C0004C30D /* Assets.xcassets in Resources */,
 				7701BEB6233F1B1B0004C30D /* Main.storyboard in Resources */,
@@ -197,8 +235,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D49FB6D023523B250056B562 /* PostViewController.swift in Sources */,
+				D49FB6DA235245280056B562 /* Like.swift in Sources */,
+				D49FB6D8235245200056B562 /* Comment.swift in Sources */,
+				D49FB6DC235245890056B562 /* Post.swift in Sources */,
+				D49FB6D3235244E00056B562 /* AuthorView.swift in Sources */,
 				7701BED1233F1B540004C30D /* PostsTableViewController.swift in Sources */,
 				7701BEB1233F1B1B0004C30D /* AppDelegate.swift in Sources */,
+				D49FB6D52352450C0056B562 /* Author.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
