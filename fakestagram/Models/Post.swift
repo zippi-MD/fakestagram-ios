@@ -9,6 +9,11 @@
 import Foundation
 import UIKit
 
+struct CreatePost: Codable {
+    let title: String
+    let imageData: String?
+}
+
 struct Post: Codable {
     let id: Int?
     let title: String
@@ -18,6 +23,7 @@ struct Post: Codable {
     let createdAt: String
     var liked: Bool
     let location: String
+    let author: Author?
 
     func likesCountText() -> String {
         return "\(likesCount) likes"
